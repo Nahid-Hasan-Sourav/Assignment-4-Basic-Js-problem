@@ -17,4 +17,4 @@ function publicBusFare(people){
 }
 
 let outputFour=publicBusFare(365);
-console.log(output)
+console.log(output);
