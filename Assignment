@@ -1,0 +1,121 @@
+//problem One
+function radianToDegree(radian){
+
+    if(typeof radian === "number")
+    {
+        
+        let degree=radian*(180/Math.PI)
+        degree=degree.toFixed(2);
+
+        let degreeNumberType=parseFloat(degree);
+    
+        return degreeNumberType;
+       
+    }
+
+    //Showing Error Message
+    else{
+        return "Please! Provide a valid input that will be a Number type.";
+    }
+   
+}
+
+
+//Problem Two
+function  isJavaScriptFile(input){
+    if(typeof input === "string"){
+
+        const fileName=input.toLowerCase(); 
+
+        if(fileName.endsWith(".js")){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    //showing error message
+    else{
+        return "Please! Provide a valid input that will be a String type.";
+    }
+}
+
+
+//Problem Three
+function oilPrice(disel,petrol,octane){
+
+    
+    let  PerLiterDiselPrice  = 114;
+    let  PerLiterPetrolPrice = 130;
+    let  PerLiterOctanePrice = 135;
+
+    if(typeof disel ==="number" && typeof petrol ==="number" && typeof octane ==="number" ){
+      
+       let totallDiselPrice  =  PerLiterDiselPrice * disel;
+       let totallPetrolPrice =  PerLiterPetrolPrice * petrol;
+       let totallOctanePrice =  PerLiterOctanePrice * octane;
+
+       let OveallTotalPrice = totallDiselPrice+totallPetrolPrice+totallOctanePrice;
+
+       return OveallTotalPrice;
+
+
+    }
+    //Showing Error message
+    else{
+        return "Please! Provide a valid input that will be a Number type.";
+    }
+}
+
+
+//Problem Four
+function publicBusFare(people){
+    let BusCapability = 50;
+    let MicrobusCapability = 11;
+    let publicBusTicketFare = 250;
+
+    if(typeof people === "number"){
+        
+        let BusRemaining=people % BusCapability;
+        let MicrobusRemaining=BusRemaining % MicrobusCapability;
+        let publicBusCoast=MicrobusRemaining * publicBusTicketFare;
+
+        return publicBusCoast
+
+    }
+    //Showing Error Message
+    else{
+        return "Please! Provide a valid input that will be a Number type.";
+    }
+}
+
+
+//Problem Five
+function isBestFriend(personOne,personTwo){
+
+    if(typeof personOne === "object" && !Array.isArray(personOne) && typeof personTwo === "object" && !Array.isArray(personTwo))
+
+    {
+        const personOneNames=personOne.name.toLowerCase();
+        const personOneFriend=personOne.friend.toLowerCase();
+        const personTwoNames=personTwo.name.toLowerCase();
+        const personTwoFriend=personTwo.friend.toLowerCase();
+        
+
+      if(personOneNames===personTwoFriend && personOneFriend===personTwoNames)
+      {
+        return "true"
+      }
+
+      else{
+        return "false"
+      }
+    }
+    //Showing Error Message
+    else{
+        return "Please! Provide a valid input that will be a object type.";
+    }
+}
+
+

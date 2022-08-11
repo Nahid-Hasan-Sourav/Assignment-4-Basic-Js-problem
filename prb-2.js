@@ -1,6 +1,9 @@
+//Problem Two
 function  isJavaScriptFile(input){
-    if(typeof input ==="string"){
-        const fileName=input.toLocaleLowerCase();       
+    if(typeof input === "string"){
+
+        const fileName=input.toLowerCase(); 
+
         if(fileName.endsWith(".js")){
             return true;
         }
@@ -8,10 +11,12 @@ function  isJavaScriptFile(input){
             return false;
         }
     }
+
+    //showing error message
     else{
         return "Please! Provide a valid input that will be a String type.";
     }
 }
 
-let outputTwo=isJavaScriptFile("image.jpg.js");
-// console.log(output)
+let outputTwo=isJavaScriptFile("app.png");
+console.log(outputTwo)
