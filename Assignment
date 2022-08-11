@@ -81,7 +81,7 @@ function publicBusFare(people){
         let MicrobusRemaining=BusRemaining % MicrobusCapability;
         let publicBusCoast=MicrobusRemaining * publicBusTicketFare;
 
-        return publicBusCoast
+        return publicBusCoast;
 
     }
     //Showing Error Message
@@ -105,11 +105,11 @@ function isBestFriend(personOne,personTwo){
 
       if(personOneNames===personTwoFriend && personOneFriend===personTwoNames)
       {
-        return "true"
+        return  true;
       }
 
       else{
-        return "false"
+        return  false;
       }
     }
     //Showing Error Message
