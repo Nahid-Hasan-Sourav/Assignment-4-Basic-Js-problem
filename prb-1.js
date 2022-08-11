@@ -1,6 +1,6 @@
 function radianToDegree(radian){
 
-    if(typeof(radian) === "number")
+    if(typeof radian === "number")
     {
 
         let degree=radian*(180/Math.PI)
@@ -18,6 +18,6 @@ function radianToDegree(radian){
 }
 
 let radians=radianToDegree(199);
-console.log(radians);
+// console.log(radians);
 
 

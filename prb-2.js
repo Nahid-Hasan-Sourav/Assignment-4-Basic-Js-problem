@@ -1,5 +1,5 @@
 function  isJavaScriptFile(input){
-    if(typeof(input)==="string"){
+    if(typeof input ==="string"){
         const fileName=input.toLocaleLowerCase();       
         if(fileName.endsWith(".js")){
             return true;
@@ -13,5 +13,5 @@ function  isJavaScriptFile(input){
     }
 }
 
-let output=isJavaScriptFile("image.jpg.js");
-console.log(output)
+let outputTwo=isJavaScriptFile("image.jpg.js");
+// console.log(output)
