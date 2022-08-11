@@ -114,7 +114,7 @@ function isBestFriend(personOne,personTwo){
     }
     //Showing Error Message
     else{
-        return "Please! Provide a valid input that will be a object type.";
+        return "Please! Provide a valid input that will be an object type.";
     }
 }
 
